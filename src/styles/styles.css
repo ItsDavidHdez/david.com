@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+
+:root {
+  --button-color: #3dcfd3;
+  --main-color: #161616;
+  --font-size: 16px;
+  --font-light: #ffffff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: var(--font-size);
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--main-color);
+}
+
+.nav {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--items {
+  align-self: center;
+}
+
+.nav--items--links {
+  text-decoration: none;
+  color: white;
+  margin: 10px 15px;
+}
+
+.nav--buttons {
+  align-self: center;
+}
+
+.nav--items--button {
+  background-color: var(--button-color);
+  height: 40px;
+  width: 140px;
+  align-self: center;
+  margin: 10px 50px;
+  border: 0px;
+  border-color: var(--button-color);
+  font-size: var(--font-size);
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  background-color: var(--main-color);
+}
+
+.main--image {
+  width: 600px;
+}
+
+.main--info {
+  width: 600px;
+}
+
+.main--title,
+.main--subtitle {
+  color: var(--button-color);
+}
+
+.main--par {
+  color: var(--font-light);
+}
+
+/* ABOUT ME */
+.aboutme {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/* PROJECTS */
+.projects {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/* CONTACT */
+.contact {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+/* FOOTER */
+.footer {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
