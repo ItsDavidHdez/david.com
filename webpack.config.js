@@ -15,15 +15,17 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpeg|jpg|gif|svg)$/i,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "assets",
-          publicPath: "assets",
-          emitFile: true,
-          esModule: false,
-        },
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "src/assets/[name].[ext]",
+              outputPath: "src/assets/",
+              useRelativePath: true,
+            },
+          },
+        ],
       },
     ],
   },
