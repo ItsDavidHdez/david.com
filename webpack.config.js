@@ -1,48 +1,66 @@
-const HTMLWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: "./src/app.js",
   output: {
-    path: __dirname + "/dist",
-    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[contenthash].js",
+    // assetModuleFilename: "assets/images/"
   },
-
   module: {
     rules: [
       {
-        test: /\.css/,
-        use: ["style-loader", "css-loader"],
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "src/assets/[name].[ext]",
-              outputPath: "src/assets/",
-              useRelativePath: true,
-            },
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 10000,
+            mimetype: "application/font-woff",
+            name: "[name].[contenthash].[ext]",
+            outputPath: "./assets/fonts/",
+            publicPath: "./assets/fonts",
+            esModule: false,
           },
-        ],
+        },
       },
     ],
   },
   plugins: [
-    new HTMLWebpackPlugin({
+    new HtmlWebpackPlugin({
+      inject: true,
       template: "./src/index.html",
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-      },
+      filename: "./index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "bundle.css",
+      filename: "assets/[name].[contenthash].css",
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets/images"),
+          to: "assets/images",
+        },
+      ],
     }),
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+  },
 };

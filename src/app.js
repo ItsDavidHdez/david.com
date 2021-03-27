@@ -1,2 +1,1 @@
-require("./styles/styles.css");
-require("./assets/david.jpg");
+import "./styles/styles.css";

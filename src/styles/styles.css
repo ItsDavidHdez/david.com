@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/ubuntu-regular.woff2") format("woff2"),
+    url("../assets/fonts/ubuntu-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --button-color: #3dcfd3;
@@ -8,12 +14,16 @@
   --font-dark: #161616;
 }
 
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   font-size: var(--font-size);
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Slab", serif;
 }
 
 .container {
