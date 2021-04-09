@@ -13,78 +13,42 @@
         <nav class="nav">
           <ul class="nav--ul" id="menu">
             <li class="nav--li">
-              <button onclick="router.loadRoute('')" class="nav--items--links">
-                home
-              </button>
+              <button
+                onclick="router.loadRoute('')"
+                class="nav--items--links"
+              ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('work')"
                 class="nav--items--links"
-              >
-                work
-              </button>
+              ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('aboutme')"
                 class="nav--items--links"
-              >
-                about
-              </button>
+              ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('skills')"
                 class="nav--items--links"
                 href="#"
-              >
-                skills
-              </button>
+              ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('contact')"
                 class="nav--items--links"
                 href="#"
-              >
-                contact
-              </button>
+              ></button>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- <div data-router></div> -->
-    <section class="contact">
-      <div class="contact--form">
-        <form action="/send-email" method="POST">
-          <div class="contact--form-container">
-            <label class="contact--form__label">What is your name </label>
-          </div class="contact--form-container">
-          <input type="text" class="contact--form__input" name="name" placeholder="Name" />
-          <div class="contact--form-container">
-            <label class="contact--form__label">What is your email </label>
-          </div>
-          <input type="text" class="contact--form__input" name="email" placeholder="Email" />
-          <div class="contact--form-container">
-            <label class="contact--form__label">Type your message </label>
-          </div>
-          <textarea
-            type="text"
-            class="contact--form__input"
-            placeholder="Message"
-            name="message"
-            id="textarea"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <div>
-            <button class="main--button">SEND MESSAGE</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    <div data-router></div>
     <footer class="footer">
       <div class="container-footer">
         <i class="fab fa-github"></i>
@@ -125,7 +89,40 @@
         },
         {
           path: "/work",
-          template: "<h1>Work</h1>",
+          template: `
+          <section class="work">
+      <div class="work-container" id="work-container">
+        <div class="work--body">
+          <div class="work--body__img">
+            <img src="./assets/images/merch.png" alt="proyect" />
+          </div>
+          <div class="work--body__info">
+            <h1>Merch</h1>
+            <div class="work--body-info-button">
+              <a href="https://github.com/ItsDavidHdez/merch-store"
+                >SEE THE PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-container">
+        <div class="work--body">
+          <div class="work--body__info">
+            <h1>Tituto</h1>
+            <div class="work--body-info-button">
+              <a href="https://github.com/ItsDavidHdez/merch-store"
+                >SEE THE PROJECT</a
+              >
+            </div>
+          </div>
+          <div class="work--body__img">
+            <img src="./assets/images/merch.png" alt="proyect" />
+          </div>
+        </div>
+      </div>
+    </section>
+          `,
         },
         {
           path: "/aboutme",
@@ -310,7 +307,36 @@
         },
         {
           path: "/contact",
-          template: ``,
+          template: `
+          <section class="contact">
+      <div class="contact--form">
+        <form action="/send-email" method="POST">
+          <div class="contact--form-container">
+            <label class="contact--form__label">What is your name </label>
+          </div class="contact--form-container">
+          <input type="text" class="contact--form__input" name="name" placeholder="Name" />
+          <div class="contact--form-container">
+            <label class="contact--form__label">What is your email </label>
+          </div>
+          <input type="text" class="contact--form__input" name="email" placeholder="Email" />
+          <div class="contact--form-container">
+            <label class="contact--form__label">Type your message </label>
+          </div>
+          <textarea
+            type="text"
+            class="contact--form__input"
+            placeholder="Message"
+            name="message"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div>
+            <button class="main--button">SEND MESSAGE</button>
+          </div>
+        </form>
+      </div>
+    </section>`,
         },
       ];
 

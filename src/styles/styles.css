@@ -29,7 +29,6 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: var(--font-size);
-  overflow: hidden;
   background: var(--main-color);
 }
 
@@ -79,7 +78,7 @@ header {
 }
 
 .nav--li {
-  margin: 20px 0px;
+  margin: 20px 30px 50px;
   list-style: none;
 }
 
@@ -101,16 +100,24 @@ header {
 }
 
 .nav--items--links {
-  text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
-  list-style: none;
+  background-color: var(--main-color);
+  border: 1px solid var(--font-info);
+  height: 25px;
+  width: 25px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.nav--items--links:focus {
+  background-color: red;
 }
 
 /* MAIN */
 .main {
   display: flex;
   background-color: var(--main-color);
+  transition: all 0.3s;
 }
 
 .main-principal-title {
@@ -195,6 +202,88 @@ header {
   50% {
     border-color: gray;
   }
+}
+
+/* WORK */
+
+.work {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  color: var(--main-color);
+  display: block;
+}
+
+#work-container {
+  padding: 75px 0px 0px;
+}
+
+.work-container {
+  width: 1200px;
+  border-radius: 50px;
+  padding: 0px 30px 0px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.work--body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 35px;
+  transition: all 0.3s;
+}
+
+.work--body:hover {
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+.work--body__img {
+  width: 66%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work--body__img img {
+  width: 700px;
+  padding: 0px 15px;
+}
+
+.work--body__info {
+  width: 100%;
+}
+
+.work--body__info h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 150px;
+  color: var(--font-info);
+}
+
+.work--body__info a {
+  text-align: center;
+  height: 15px;
+  width: 160px;
+  align-self: center;
+  border-radius: 6px;
+  font-size: var(--font-size);
+  color: var(--font-info);
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--background-boton);
+  border: none;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.work--body-info-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* ABOUT ME */
