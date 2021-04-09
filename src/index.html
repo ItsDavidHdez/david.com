@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>David Vargas Hernández</title>
   </head>
   <body>
     <div id="cursor"></div>
@@ -13,160 +13,78 @@
         <nav class="nav">
           <ul class="nav--ul" id="menu">
             <li class="nav--li">
-              <a class="nav--items--links" href="#">HOME</a>
+              <button onclick="router.loadRoute('')" class="nav--items--links">
+                home
+              </button>
             </li>
             <li class="nav--li">
-              <a class="nav--items--links" href="#">ABOUT</a>
+              <button
+                onclick="router.loadRoute('work')"
+                class="nav--items--links"
+              >
+                work
+              </button>
             </li>
             <li class="nav--li">
-              <a class="nav--items--links" href="#">SERVICES</a>
+              <button
+                onclick="router.loadRoute('aboutme')"
+                class="nav--items--links"
+              >
+                about
+              </button>
             </li>
             <li class="nav--li">
-              <a class="nav--items--links" href="#">PAGES</a>
+              <button
+                onclick="router.loadRoute('skills')"
+                class="nav--items--links"
+                href="#"
+              >
+                skills
+              </button>
             </li>
             <li class="nav--li">
-              <a class="nav--items--links" href="#">BLOG</a>
+              <button
+                onclick="router.loadRoute('contact')"
+                class="nav--items--links"
+                href="#"
+              >
+                contact
+              </button>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="main">
-      <div class="container">
-        <div class="main--info">
-          <h1 class="main-principal-title">Hello world! I'm David.</h1>
-          <h2 class="main--secondary-title">Passionate Developer</h2>
-          <p class="main--par">
-            Hello! I am Mexican, i have 21 years old and actually I study
-            Software Engineering totally passionate about technology. I love
-            software development with a strong love for frontend architecture
-          </p>
-          <p class="main--par">Find more about me here</p>
-          <div>
-            <a id="contact" class="main--button">CONTACT ME</a>
-            <a id="cv" class="main--button">DOWNLOAD CV</a>
-          </div>
-        </div>
-        <div class="main--image">
-          <img
-            class="main--image__img"
-            src="assets/images/david.jpg"
-            alt="David Vargas Hernandez"
-          />
-        </div>
-      </div>
-    </main>
-    <!-- <section class="aboutme">
-      <div class="aboutme--image">
-        <img src="assets/images/david.jpg" alt="David Vargas Hernández" />
-      </div>
-      <div class="aboutme--info">
-        <h5 class="aboutme--info__title">About me</h5>
-        <h6 class="aboutme--info__subtitle">
-          Hello i'm David Vargas Hernández
-        </h6>
-        <p class="aboutme--info__par">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-          voluptatem excepturi maxime atque aliquid placeat nisi, provident
-          magnam sequi blanditiis qui dolor eos. Adipisci deserunt qui dicta
-          odio ducimus ex?
-        </p>
-        <a class="aboutme--info__link" href="">GitHub</a>
-        <a class="aboutme--info__link" href="">Facebook</a>
-        <a class="aboutme--info__link" href="">Twitter</a>
-        <a class="aboutme--info__link" href="">Instagram</a>
-      </div>
-    </section>
-    <section class="projects">
-      <h2 class="projects--title">My projects</h2>
-      <p class="projects--subtitle">Here you can see my last projects.</p>
-      <div class="projects--dashboard">
-        <a
-          href="https://github.com/ItsDavidHdez/merch-store"
-          class="projects--dashboard__item"
-        >
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Merch Store</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </a>
-        <div class="projects--dashboard__item">
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </div>
-        <div class="projects--dashboard__item">
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </div>
-        <div class="projects--dashboard__item">
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </div>
-        <div class="projects--dashboard__item">
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </div>
-        <div class="projects--dashboard__item">
-          <img src="assets/images/phone.png" alt="Project 1" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            repellendus delectus ex iste sed nihil explicabo tenetur distinctio,
-            illo voluptas expedita officia autem atque mollitia eligendi quaerat
-            numquam! Minus, ipsam!
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- <div data-router></div> -->
     <section class="contact">
-      <h2 class="contact--title">Contact Us</h2>
-      <p class="contact--subtitle">Contact me!</p>
-      <div class="contact--container">
-        <div class="contact--container__info">
-          <img src="" alt="Phone" />
-          <h3>Phone</h3>
-          <p>+52 785 101 5963</p>
-        </div>
-        <div class="contact--container__info">
-          <img src="" alt="Email" />
-          <h3>Email</h3>
-          <p>david-0610@live.com.mx</p>
-        </div>
-        <div class="contact--container__info">
-          <img src="" alt="GitHub" />
-          <h3>Secundary Email</h3>
-          <p>davidvh46@gmail.com</p>
-        </div>
+      <div class="contact--form">
+        <form action="/send-email" method="POST">
+          <div class="contact--form-container">
+            <label class="contact--form__label">What is your name </label>
+          </div class="contact--form-container">
+          <input type="text" class="contact--form__input" name="name" placeholder="Name" />
+          <div class="contact--form-container">
+            <label class="contact--form__label">What is your email </label>
+          </div>
+          <input type="text" class="contact--form__input" name="email" placeholder="Email" />
+          <div class="contact--form-container">
+            <label class="contact--form__label">Type your message </label>
+          </div>
+          <textarea
+            type="text"
+            class="contact--form__input"
+            placeholder="Message"
+            name="message"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div>
+            <button class="main--button">SEND MESSAGE</button>
+          </div>
+        </form>
       </div>
-    </section>-->
+    </section>
     <footer class="footer">
       <div class="container-footer">
         <i class="fab fa-github"></i>
@@ -175,6 +93,268 @@
         <i class="fab fa-linkedin"></i>
       </div>
     </footer>
+    <script>
+      const routes = [
+        {
+          path: "/",
+          template: `<main class="main">
+    <div class="container">
+      <div class="main--info">
+        <h1 class="main-principal-title">Hello world! I'm David.</h1>
+        <h2 class="main--secondary-title">Passionate Developer</h2>
+        <p class="main--par">
+          Hello! I am Mexican, i have 21 years old and actually I study
+          Software Engineering totally passionate about technology. I love
+          software development with a strong love for frontend architecture
+        </p>
+        <p class="main--par">Find more about me here</p>
+        <div>
+          <a id="contact" class="main--button" onclick="router.loadRoute('contact')">CONTACT ME</a>
+          <a id="cv" class="main--button">DOWNLOAD CV</a>
+        </div>
+      </div>
+      <div class="main--image">
+        <img
+          class="main--image__img"
+          src="assets/images/david.jpg"
+          alt="David Vargas Hernandez"
+        />
+      </div>
+    </div>
+  </main>`,
+        },
+        {
+          path: "/work",
+          template: "<h1>Work</h1>",
+        },
+        {
+          path: "/aboutme",
+          template: `<section class="aboutme">
+        <div class="aboutme-container">
+          <div class="aboutme-container-body">
+            <div class="aboutme-head">
+              <h1 class="aboutme--title" id="title">David Vargas Hernández</h1>
+              <p class="aboutme--subtitle" id="subtitle">Web developer</p>
+              <div class="main--image">
+                <img
+                  class="aboutme--img"
+                  src="assets/images/david.jpg"
+                  alt="David Vargas Hernandez"
+                />
+              </div>
+            </div>
+            <div class="main--info">
+              <p class="aboutme--info">
+                I am a front-end developer in web technologies with basic
+                back-end knowledge. Passionate and dedicated eager to work,
+                learn new things, improve my skills and collaborate as a team.
+              </p>
+              <p class="aboutme--info">
+                Personally, I identify as someone patient and friendly, who
+                always seeks to do the work efficiently and organized. In
+                addition to always concrete my work in the best way without ever
+                severing to learn, giving a unique and own style to each
+                project, trying to innovate and always maintain consistency in
+                every aspect.
+              </p>
+              <p class="aboutme--info">
+                I love creating innovative digital content based on my
+                knowledge. In addition, I always try to have clear goals and
+                achieve them, forever to remain in constant personal growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>`,
+        },
+        {
+          path: "/skills",
+          template: `<section class="skills-container">
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>HTML</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>CSS</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-bootstrap"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Bootstrap</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Tailwind</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-js"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>JavaScript</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>React</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-angular"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Angular</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-git-alt"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Git</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-linux"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Linux</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-docker"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Docker</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-php"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>PHP</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-php"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>MySQL</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-php"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>MongoDB</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-node"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>NodeJS</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Java</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-wordpress"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>WordPress</p>
+        </div>
+      </div>
+      <div class="skills--card">
+        <div class="skills--card-img">
+          <i class="fab fa-python"></i>
+        </div>
+        <div class="skills--card-title">
+          <p>Python</p>
+        </div>
+      </div>
+    </section>`,
+        },
+        {
+          path: "/contact",
+          template: ``,
+        },
+      ];
+
+      class Router {
+        constructor(routes) {
+          this.routes = routes;
+          this._loadInitialRoute();
+        }
+
+        loadRoute(...urlSegs) {
+          const matchedRoute = this._matchUrlToRoute(urlSegs);
+
+          const url = `/${urlSegs.join("/")}`;
+          history.pushState({}, "this works", url);
+
+          const routerOutElm = document.querySelectorAll("[data-router]")[0];
+          routerOutElm.innerHTML = matchedRoute.template;
+        }
+
+        _matchUrlToRoute(urlSegs) {
+          const matchedRoute = this.routes.find((route) => {
+            const routePathSegs = route.path.split("/").slice(1);
+            if (routePathSegs.length !== urlSegs.length) {
+              return false;
+            }
+
+            return routePathSegs.every(
+              (routePathSeg, i) => routePathSeg === urlSegs[i]
+            );
+          });
+
+          return matchedRoute;
+        }
+
+        _loadInitialRoute() {
+          const pathName = window.location.pathname.split("/");
+          const pathSegs = pathName.length > 1 ? pathName.slice(1) : "";
+
+          this.loadRoute(...pathSegs);
+        }
+      }
+
+      const router = new Router(routes);
+    </script>
     <script
       src="https://kit.fontawesome.com/d1dcf18181.js"
       crossorigin="anonymous"
