@@ -16,32 +16,35 @@
               <button
                 onclick="router.loadRoute('')"
                 class="nav--items--links"
+                id="home-option"
               ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('work')"
                 class="nav--items--links"
+                id="work-option"
               ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('aboutme')"
                 class="nav--items--links"
+                id="aboutme-option"
               ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('skills')"
                 class="nav--items--links"
-                href="#"
+                id="skills-option"
               ></button>
             </li>
             <li class="nav--li">
               <button
                 onclick="router.loadRoute('contact')"
                 class="nav--items--links"
-                href="#"
+                id="contact-option"
               ></button>
             </li>
           </ul>
@@ -49,6 +52,7 @@
       </div>
     </header>
     <div data-router></div>
+
     <footer class="footer">
       <div class="container-footer">
         <i class="fab fa-github"></i>
@@ -62,30 +66,36 @@
         {
           path: "/",
           template: `<main class="main">
-    <div class="container">
-      <div class="main--info">
-        <h1 class="main-principal-title">Hello world! I'm David.</h1>
-        <h2 class="main--secondary-title">Passionate Developer</h2>
-        <p class="main--par">
-          Hello! I am Mexican, i have 21 years old and actually I study
-          Software Engineering totally passionate about technology. I love
-          software development with a strong love for frontend architecture
-        </p>
-        <p class="main--par">Find more about me here</p>
-        <div>
-          <a id="contact" class="main--button" onclick="router.loadRoute('contact')">CONTACT ME</a>
-          <a id="cv" class="main--button">DOWNLOAD CV</a>
+      <div class="container" id="container">
+        <div class="main--info">
+          <h1 class="main-principal-title">Hello world! I'm David.</h1>
+          <h2 class="main--secondary-title" id="main">Passionate Developer</h2>
+          <p class="main--par" id="main--par">
+            Hello! I am Mexican, i have 21 years old and actually I study
+            Software Engineering totally passionate about technology. I love
+            software development with a strong love for frontend architecture
+          </p>
+          <p class="main--par" id="main--par">Find more about me here</p>
+          <div>
+            <a
+              id="contact"
+              class="main--button"
+              onclick="router.loadRoute('contact')"
+              >CONTACT ME</a
+            >
+            <a id="cv" class="main--button">DOWNLOAD CV</a>
+          </div>
+        </div>
+        <div class="main--image">
+          <img
+            id="main--image"
+            class="main--image__img"
+            src="assets/images/david.jpg"
+            alt="David Vargas Hernandez"
+          />
         </div>
       </div>
-      <div class="main--image">
-        <img
-          class="main--image__img"
-          src="assets/images/david.jpg"
-          alt="David Vargas Hernandez"
-        />
-      </div>
-    </div>
-  </main>`,
+    </main>`,
         },
         {
           path: "/work",

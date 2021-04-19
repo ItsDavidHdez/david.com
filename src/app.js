@@ -21,3 +21,21 @@ anchor.forEach((anc) => {
     cursor.style.transform = "";
   });
 });
+
+// Initial animation
+
+const container = document.getElementById("container");
+const main = document.getElementById("main");
+const cv = document.getElementById("cv");
+const contact = document.getElementById("contact");
+const mainImage = document.getElementById("main--image");
+const mainPar = document.getElementById("main--par");
+
+setTimeout(() => {
+  container.style.display = "flex";
+  main.style.display = "flex";
+  contact.style.display = "inline";
+  cv.style.display = "inline";
+  mainImage.style.display = "inline";
+  mainPar.style.display = "flex";
+}, 3000);
