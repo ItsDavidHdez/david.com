@@ -30,6 +30,7 @@ const cv = document.getElementById("cv");
 const contact = document.getElementById("contact");
 const mainImage = document.getElementById("main--image");
 const mainPar = document.getElementById("main--par");
+const buttons = document.getElementById("main--button-container");
 
 setTimeout(() => {
   container.style.display = "flex";
@@ -38,4 +39,10 @@ setTimeout(() => {
   cv.style.display = "inline";
   mainImage.style.display = "inline";
   mainPar.style.display = "flex";
+  buttons.style.display = "block";
 }, 3000);
+
+/**
+ * Englobar tiempos en una función
+ * onclick a esa función de los botones de menú
+ */
