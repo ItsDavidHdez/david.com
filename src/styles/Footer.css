@@ -1,0 +1,34 @@
+footer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  height: 35vh;
+  display: inline-block;
+  margin: auto 20px;
+}
+
+.fab {
+  font-size: 40px;
+  color: var(--font-color);
+  margin: 8px 0px;
+}
+
+.container-footer {
+  position: fixed;
+  display: grid;
+}
+
+.fab:hover {
+  animation: escalation infinite;
+  transition: all 0.3s;
+}
+
+@keyframes escalation {
+  from {
+    font-size: 30px;
+  }
+  to {
+    font-size: 50px;
+  }
+}

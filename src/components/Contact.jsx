@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { toEmail, handleSubmitEmail } from "../utils/";
+import "../styles/Contact.css";
 
 const Contact = () => {
   const [state, setState] = useState({

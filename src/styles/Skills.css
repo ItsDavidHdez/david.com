@@ -1,0 +1,21 @@
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+  animation: fadeIn 1s;
+}
+
+.skills--card {
+  text-align: center;
+}
+
+.skills--card-img img {
+  width: 50px;
+}
+
+.skills--card p {
+  color: var(--font-info);
+  font-size: 22px;
+}
