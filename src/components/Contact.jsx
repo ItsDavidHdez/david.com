@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { toEmail, handleSubmitEmail } from "../utils/";
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -7,16 +8,10 @@ const Contact = () => {
     message: "",
   });
 
-  const mailTo = `mailto:davidvh46@gmail.com?subject=nombre ${state.name}  correo ${state.email}&body=${state.message}`;
   const buttonMailTo = useRef(null);
 
   const handleChangeTetx = (name, value) => {
     setState({ ...state, [name]: value });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    buttonMailTo.current.click();
   };
 
   return (
@@ -25,7 +20,7 @@ const Contact = () => {
         <form id="form" action="/send-email" method="POST">
           <div className="contact--form-container">
             <label htmlFor="name" className="contact--form__label">
-              What is your name*
+              What is your name <span className="required">*</span>
             </label>
           </div>
           <input
@@ -38,7 +33,7 @@ const Contact = () => {
           />
           <div className="contact--form-container">
             <label htmlFor="email" className="contact--form__label">
-              What is your email*
+              What is your email <span className="required">*</span>
             </label>
           </div>
           <input
@@ -51,7 +46,7 @@ const Contact = () => {
           />
           <div className="contact--form-container">
             <label htmlFor="message" className="contact--form__label">
-              Type your message*
+              Type your message <span className="required">*</span>
             </label>
           </div>
           <textarea
@@ -68,12 +63,21 @@ const Contact = () => {
             }
           ></textarea>
           <div>
-            <button className="main--button" onClick={(e) => handleSubmit(e)}>
+            <button
+              id="sendMessage"
+              className="main--button"
+              onClick={(e) => handleSubmitEmail(e, buttonMailTo)}
+            >
               SEND MESSAGE
             </button>
           </div>
         </form>
-        <a ref={buttonMailTo} style={{ opacity: 0 }} href={mailTo} id="mailto">
+        <a
+          ref={buttonMailTo}
+          style={{ opacity: 0 }}
+          href={toEmail(state.name, state.email, state.message)}
+          id="mailto"
+        >
           mail
         </a>
       </div>
