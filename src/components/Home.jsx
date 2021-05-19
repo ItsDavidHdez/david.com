@@ -11,15 +11,18 @@ const Home = () => {
             Passionate Developer
           </h2>
           <p className="main--par" id="main--par">
-            Hello! I am Mexican, i have 21 years old and actually I study
+            Hello! I'm Mexican, i have 21 years old and actually I study
             Software Engineering totally passionate about technology. I love
             software development with a strong love for frontend architecture
           </p>
           <p className="main--par" id="main--par">
-            Find more about me here
+            Find more about me{" "}
+            <Link className="main--par__aboutme" to="/aboutme">
+              here
+            </Link>
           </p>
           <div className="main--button-container" id="main--button-container">
-            <Link id="contact" className="main--button" to="">
+            <Link id="contact" className="main--button" to="/contact">
               CONTACT ME
             </Link>
             <button id="cv" className="main--button">

@@ -9,6 +9,7 @@
 :root {
   --button-color: #3dcfd3;
   --main-color: #282333;
+  --secundary-color: #752850;
   --font-size: 16px;
   --font-color: #d72e75;
   --font-info: #fff;
@@ -91,10 +92,6 @@ header {
 .nav--ul {
   display: inline-block;
   margin-top: 35vh;
-  /* transform: translateY(-55%);
-  transition-property: all;
-  transition-duration: 2s;
-  transition-delay: 1s; */
 }
 
 .container-menu {
@@ -103,6 +100,7 @@ header {
 }
 
 .nav--items--links {
+  display: block;
   background-color: var(--main-color);
   border: 1px solid var(--font-info);
   height: 25px;
@@ -110,6 +108,26 @@ header {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+
+.nav--items--links:hover {
+  animation: header 1s;
+}
+
+/* .nav--items--links::before {
+  display: inline-block;
+  content: "hola";
+  border-top: 0.3rem solid black;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+} */
+
+@keyframes header {
+  100% {
+    opacity: 1;
+    content: "header";
+  }
 }
 
 .nav--items--links:focus {
@@ -120,17 +138,8 @@ header {
   0% {
     transform: translateY(70px);
   }
-}
-
-@keyframes born-component {
-  from {
-    display: none;
-    transform: scale(0);
-  }
-  to {
-    display: flex;
-    transform: scale(1);
-    transform: matrix();
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -151,11 +160,10 @@ header {
 }
 
 .main--secondary-title {
-  display: none;
   color: var(--font-info);
   margin: 0px 0px 40px;
   animation: born-title 1s;
-  animation-delay: 0s;
+  animation: fadeIn 4s;
 }
 
 .main--info {
@@ -163,12 +171,28 @@ header {
 }
 
 .main--par {
-  display: none;
   color: var(--font-info);
   margin: 0px 0px 30px;
   line-height: 30px;
   font-size: 20px;
-  animation: born-component 1s;
+  animation: fadeIn 4s;
+}
+
+.main--par__aboutme {
+  color: #3971d8;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main--button {
@@ -186,37 +210,39 @@ header {
   background-color: var(--font-color);
   border: none;
   letter-spacing: 0.2px;
-  animation: born-component 1s;
-  animation-delay: 0s;
-}
-
-.main--button:hover {
-  background-color: white;
-}
-
-.main--button-container {
-  display: none;
+  animation: fadeIn 4s;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #contact {
   background-color: var(--font-color);
   border: 1px solid var(--font-color);
   margin: 0px 10px 0px 0px;
-  animation: born-component 1s;
-  animation-delay: 0s;
+  animation: fadeIn 4s;
+}
+
+#contact:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 1px solid var(--font-color);
 }
 
 #cv {
   background-color: var(--background-boton);
-  animation: born-component 1s;
-  animation-delay: 0s;
+  animation: fadeIn 4s;
+}
+
+#cv:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 1px solid var(--background-boton);
 }
 
 .main--image__img {
-  display: none;
   width: 200px;
   border-radius: 50%;
-  animation: born-component 1s;
+  animation: fadeIn 4s;
 }
 
 /* ANIMATIONS MAIN */
@@ -247,6 +273,7 @@ header {
   margin: 0px auto;
   color: var(--main-color);
   display: block;
+  animation: fadeIn 1s;
 }
 
 #work-container {
@@ -327,6 +354,7 @@ header {
   margin: 0px auto;
   display: flex;
   color: var(--main-color);
+  animation: fadeIn 1s;
 }
 
 .aboutme-container {
@@ -390,6 +418,7 @@ header {
   width: 1200px;
   margin: auto;
   padding-top: 100px;
+  animation: fadeIn 1s;
 }
 
 .skills--card {
@@ -410,6 +439,7 @@ header {
   max-width: 1200px;
   padding: 140px 30px;
   margin: 0px auto;
+  animation: fadeIn 1s;
 }
 
 .contact--form {
@@ -443,9 +473,23 @@ header {
   margin: 0px 0px 20px 0px;
 }
 
+.required {
+  color: red;
+}
+
 form {
   width: 800px;
   margin: 0px auto;
+}
+
+#sendMessage {
+  animation: fadeIn 2s;
+}
+
+#sendMessage:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border: 1px solid #d72e75;
 }
 
 /* FOOTER */
@@ -453,14 +497,14 @@ footer {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 20px;
-  height: 150px;
+  right: 40px;
+  height: 35vh;
   display: inline-block;
   margin: auto 20px;
 }
 
 .fab {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--font-color);
   margin: 8px 0px;
 }
@@ -468,4 +512,18 @@ footer {
 .container-footer {
   position: fixed;
   display: grid;
+}
+
+.fab:hover {
+  animation: escalation infinite;
+  transition: all 0.3s;
+}
+
+@keyframes escalation {
+  from {
+    font-size: 30px;
+  }
+  to {
+    font-size: 50px;
+  }
 }
