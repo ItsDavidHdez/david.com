@@ -2,6 +2,10 @@ header {
   background-color: var(--main-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav--li {
   margin: 20px 30px 50px;
   list-style: none;
@@ -34,6 +38,11 @@ header {
   border-radius: 50%;
 }
 
+.nav--items__span {
+  color: #fff;
+  display: none;
+}
+
 .nav--items--links:hover {
   animation: header 1s;
 }
@@ -64,5 +73,37 @@ header {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav {
+    width: 100%;
+    display: block;
+  }
+
+  .nav--items--links {
+    display: contents;
+  }
+
+  .container-menu {
+    width: 100%;
+    margin: 40px auto 0px;
+  }
+
+  .nav--li {
+    margin: 0px auto;
+  }
+
+  .nav--ul {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav--items__span {
+    display: flex;
   }
 }

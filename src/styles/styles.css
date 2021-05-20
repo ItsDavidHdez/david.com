@@ -26,7 +26,7 @@ body {
   padding: 0px 30px;
   margin: 100px auto;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -90,5 +90,11 @@ body {
   }
   50% {
     border-color: gray;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    margin: 75px auto;
   }
 }

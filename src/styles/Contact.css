@@ -3,6 +3,7 @@
   padding: 140px 30px;
   margin: 0px auto;
   animation: fadeIn 1s;
+  position: relative;
 }
 
 .contact--form {
