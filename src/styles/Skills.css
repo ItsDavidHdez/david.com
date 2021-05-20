@@ -19,3 +19,11 @@
   color: var(--font-info);
   font-size: 22px;
 }
+
+@media screen and (max-width: 720px) {
+  .skills-container {
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}

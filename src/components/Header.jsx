@@ -24,7 +24,7 @@ const Header = () => {
                 className="nav--items--links"
                 id="aboutme-option"
               >
-                <span className="nav--items__span">About me</span>
+                <span className="nav--items__span">About</span>
               </Link>
             </li>
             <li className="nav--li">

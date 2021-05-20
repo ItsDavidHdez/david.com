@@ -78,7 +78,7 @@ a {
 
 @media screen and (max-width: 720px) {
   .nav {
-    width: 100%;
+    width: 90%;
     display: block;
   }
 
@@ -89,6 +89,7 @@ a {
   .container-menu {
     width: 100%;
     margin: 40px auto 0px;
+    z-index: 999;
   }
 
   .nav--li {

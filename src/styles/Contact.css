@@ -55,3 +55,24 @@ form {
   background-color: transparent;
   border: 1px solid #d72e75;
 }
+
+@media screen and (max-width: 720px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact--form {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .contact--form__input {
+    width: 92%;
+  }
+}

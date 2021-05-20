@@ -60,3 +60,24 @@
   width: 180px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 720px) {
+  .aboutme {
+    position: initial;
+  }
+
+  .aboutme-container {
+    background-color: transparent;
+    width: 85%;
+    padding: 0px 25px;
+  }
+
+  .aboutme-head {
+    display: inline-block;
+    color: #fff;
+  }
+
+  .aboutme--info {
+    color: #fff;
+  }
+}
