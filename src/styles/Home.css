@@ -1,6 +1,11 @@
 .main {
   display: flex;
   background-color: var(--main-color);
+  width: 100%;
+}
+
+.main--info {
+  width: 100%;
 }
 
 .main-principal-title {
@@ -20,9 +25,9 @@
   animation: fadeIn 4s;
 }
 
-.main--info {
+/* .main--info {
   padding-right: 10px;
-}
+} */
 
 .main--par {
   color: var(--font-info);
@@ -86,7 +91,7 @@
   animation: fadeIn 4s;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .main {
     justify-content: center;
   }
@@ -97,5 +102,11 @@
 
   .main--image img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 0px 50px 0px 50px;
   }
 }

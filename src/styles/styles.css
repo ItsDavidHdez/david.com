@@ -19,6 +19,7 @@ body {
   padding: 0px;
   font-size: var(--font-size);
   background: var(--main-color);
+  min-height: 100vh;
 }
 
 .container {
@@ -29,22 +30,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* #cursor {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: #ffffff;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  transform-origin: 80% 80%;
-  transition: transform 0.5s ease-in-out;
-  animation: borderAnim 4s linear infinite;
-  animation-name: none;
-  z-index: 10;
-} */
 
 @keyframes borderAnim {
   0%,
@@ -93,8 +78,10 @@ body {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .container {
-    margin: 75px auto;
+    margin: 90px auto;
+    padding: 0px 50px;
+    width: 100%;
   }
 }

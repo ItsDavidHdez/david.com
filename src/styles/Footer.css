@@ -4,7 +4,8 @@ footer {
   bottom: 0;
   right: 40px;
   height: 35vh;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin: auto 20px;
 }
 
@@ -33,7 +34,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .footer {
     position: initial;
     margin: 0px auto;

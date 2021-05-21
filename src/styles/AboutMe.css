@@ -20,10 +20,14 @@
 }
 
 .aboutme-head {
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
-  grid-template-columns: 450px 450px 300px;
   margin-bottom: 30px;
+}
+
+.aboutme-head--info {
+  display: flex;
 }
 
 .aboutme--title,
@@ -61,23 +65,59 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 720px) {
+#profile-image {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
   .aboutme {
     position: initial;
   }
 
+  #subtitle {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+
+  #profile-image {
+    display: block;
+    width: 170px;
+    animation: fadeIn 1s;
+  }
+
+  .aboutme-head--info {
+    display: block;
+    height: 140px;
+  }
+
+  #title {
+    padding: 0;
+    border-right: none;
+    border-bottom: 3px solid var(--font-color);
+    height: 50%;
+  }
+
   .aboutme-container {
     background-color: transparent;
-    width: 85%;
-    padding: 0px 25px;
+    width: 100%;
+    padding: 0px 10px;
   }
 
   .aboutme-head {
-    display: inline-block;
+    display: flex;
     color: #fff;
+    align-items: center;
   }
 
   .aboutme--info {
     color: #fff;
+  }
+
+  .aboutme-container-body {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

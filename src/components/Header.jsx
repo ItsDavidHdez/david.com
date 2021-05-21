@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -9,41 +9,59 @@ const Header = () => {
         <nav className="nav">
           <ul className="nav--ul" id="menu">
             <li className="nav--li">
-              <Link to="/" className="nav--items--links" id="home-option">
+              <NavLink
+                exact
+                to="/"
+                className="nav--items--links"
+                id="home-option"
+                activeClassName="nav--links-active"
+              >
                 <span className="nav--items__span">Home</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav--li">
-              <Link to="/work" className="nav--items--links" id="work-option">
+              <NavLink
+                exact
+                to="/work"
+                className="nav--items--links"
+                id="work-option"
+                activeClassName="nav--links-active"
+              >
                 <span className="nav--items__span">Work</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav--li">
-              <Link
+              <NavLink
+                exact
                 to="/aboutme"
                 className="nav--items--links"
                 id="aboutme-option"
+                activeClassName="nav--links-active"
               >
                 <span className="nav--items__span">About</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav--li">
-              <Link
+              <NavLink
+                exact
                 to="/skills"
                 className="nav--items--links"
                 id="skills-option"
+                activeClassName="nav--links-active"
               >
                 <span className="nav--items__span">Skills</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav--li">
-              <Link
+              <NavLink
+                exact
                 to="/contact"
                 className="nav--items--links"
                 id="contact-option"
+                activeClassName="nav--links-active"
               >
                 <span className="nav--items__span">Contact</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

@@ -7,12 +7,21 @@ const AboutMe = () => {
       <div className="aboutme-container">
         <div className="aboutme-container-body">
           <div className="aboutme-head">
-            <h1 className="aboutme--title" id="title">
-              David Vargas Hernández
-            </h1>
-            <p className="aboutme--subtitle" id="subtitle">
-              Web developer
-            </p>
+            <img
+              id="profile-image"
+              className="main--image__img"
+              src="assets/images/david.jpg"
+              alt="David Vargas Hernandez"
+            />
+            <div className="aboutme-head--info">
+              <h1 className="aboutme--title" id="title">
+                David Vargas Hernández
+              </h1>
+              <p className="aboutme--subtitle" id="subtitle">
+                Web developer
+              </p>
+            </div>
+
             <div className="main--image">
               <img
                 className="aboutme--img"
