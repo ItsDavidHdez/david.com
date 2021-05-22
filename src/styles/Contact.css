@@ -93,4 +93,17 @@ form {
   .contact--form-container {
     margin-bottom: 10px;
   }
+
+  .contact--form__label {
+    font-size: 14px;
+  }
+
+  #required {
+    font-size: 14px;
+  }
+
+  .contact--form__input {
+    border: 1px solid #90a9b4;
+    font-size: 12px;
+  }
 }
