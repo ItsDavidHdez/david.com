@@ -21,7 +21,7 @@ const Contact = () => {
         <form id="form" action="/send-email" method="POST">
           <div className="contact--form-container">
             <label htmlFor="name" className="contact--form__label">
-              What is your name <span className="required">*</span>
+              What is your name <span id="required">*</span>
             </label>
           </div>
           <input
@@ -34,7 +34,7 @@ const Contact = () => {
           />
           <div className="contact--form-container">
             <label htmlFor="email" className="contact--form__label">
-              What is your email <span className="required">*</span>
+              What is your email <span id="required">*</span>
             </label>
           </div>
           <input
@@ -47,7 +47,7 @@ const Contact = () => {
           />
           <div className="contact--form-container">
             <label htmlFor="message" className="contact--form__label">
-              Type your message <span className="required">*</span>
+              Type your message <span id="required">*</span>
             </label>
           </div>
           <textarea
