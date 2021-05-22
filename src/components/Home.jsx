@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import davidImg from "../assets/images/david.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
           <img
             id="main--image"
             className="main--image__img"
-            src="assets/images/david.jpg"
+            src={davidImg}
             alt="David Vargas Hernandez"
           />
         </div>
