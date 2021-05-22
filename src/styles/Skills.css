@@ -27,3 +27,19 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .skills--card p {
+    font-size: 14px;
+  }
+
+  .skills-container {
+    padding-top: 90px;
+  }
+
+  #sendMessage {
+    height: 40px;
+    width: 98px;
+    font-size: 9.2px;
+  }
+}
