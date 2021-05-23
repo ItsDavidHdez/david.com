@@ -1,9 +1,11 @@
 import React from "react";
-import merchImg from "../assets/images/merch.png";
-import bookApp from "../assets/images/book-app.png";
-import tpMexicanaImg from "../assets/images/tp-mexicana.png";
-import cientificoImg from "../assets/images/100tifico.png";
-import profesionalBlogImg from "../assets/images/profesional-blog.png";
+import {
+  merchImg,
+  bookApp,
+  tpMexicanaImg,
+  cientificoImg,
+  profesionalBlogImg,
+} from "../utils";
 import "../styles/Work.css";
 
 const Work = () => {
@@ -17,7 +19,10 @@ const Work = () => {
           <div className="work--body__info">
             <h1>Merch</h1>
             <div className="work--body-info-button">
-              <a href="https://github.com/ItsDavidHdez/merch-store">
+              <a
+                href="https://github.com/ItsDavidHdez/merch-store"
+                target="_blank"
+              >
                 SEE THE PROJECT
               </a>
             </div>
@@ -29,7 +34,10 @@ const Work = () => {
           <div className="work--body__info">
             <h1>TP Mexicana</h1>
             <div className="work--body-info-button">
-              <a href="https://github.com/ItsDavidHdez/tp-mexicana">
+              <a
+                href="https://github.com/ItsDavidHdez/tp-mexicana"
+                target="_blank"
+              >
                 SEE THE PROJECT
               </a>
             </div>
@@ -47,7 +55,10 @@ const Work = () => {
           <div className="work--body__info">
             <h1>Book App</h1>
             <div className="work--body-info-button">
-              <a href="https://my-book-app-by-david.herokuapp.com/">
+              <a
+                href="https://my-book-app-by-david.herokuapp.com/"
+                target="_blank"
+              >
                 SEE THE PROJECT
               </a>
             </div>
@@ -59,7 +70,10 @@ const Work = () => {
           <div className="work--body__info">
             <h1>100tifi.co</h1>
             <div className="work--body-info-button">
-              <a href="https://github.com/ItsDavidHdez/100tifi.co">
+              <a
+                href="https://github.com/ItsDavidHdez/100tifi.co"
+                target="_blank"
+              >
                 SEE THE PROJECT
               </a>
             </div>
@@ -72,15 +86,17 @@ const Work = () => {
       <div className="work-container" id="work-container">
         <div className="work--body">
           <div className="work--body__img">
-            <img
-              src="./assets/images/profesional-blog.png"
-              alt="Profesional Blog"
-            />
+            <img src={profesionalBlogImg} alt="Profesional Blog" />
           </div>
           <div className="work--body__info">
             <h1>Profesional Blog</h1>
             <div className="work--body-info-button">
-              <a href={profesionalBlogImg}>SEE THE PROJECT</a>
+              <a
+                href="https://github.com/ItsDavidHdez/profesional-blog"
+                target="_blank"
+              >
+                SEE THE PROJECT
+              </a>
             </div>
           </div>
         </div>
