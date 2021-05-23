@@ -11,7 +11,7 @@ const AboutMe = () => {
             <img
               id="profile-image"
               className="main--image__img"
-              src="assets/images/david.jpg"
+              src={davidImg}
               alt="David Vargas Hernandez"
             />
             <div className="aboutme-head--info">

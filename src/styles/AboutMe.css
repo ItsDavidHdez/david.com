@@ -121,3 +121,31 @@
     padding-right: 10px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  #profile-image {
+    width: 105px;
+  }
+
+  #title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .aboutme-head--info {
+    margin-left: 20px;
+  }
+
+  .main--info {
+    font-size: 16px;
+  }
+
+  .aboutme-container {
+    margin-top: 65px;
+  }
+}
