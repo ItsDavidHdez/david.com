@@ -65,24 +65,6 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className="work-container">
-        <div className="work--body">
-          <div className="work--body__info">
-            <h1>100tifi.co</h1>
-            <div className="work--body-info-button">
-              <a
-                href="https://github.com/ItsDavidHdez/100tifi.co"
-                target="_blank"
-              >
-                SEE THE PROJECT
-              </a>
-            </div>
-          </div>
-          <div className="work--body__img">
-            <img src={cientificoImg} alt="Cientifico" />
-          </div>
-        </div>
-      </div>
       <div className="work-container" id="work-container">
         <div className="work--body">
           <div className="work--body__img">
@@ -98,6 +80,24 @@ const Work = () => {
                 SEE THE PROJECT
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="work-container">
+        <div className="work--body">
+          <div className="work--body__info">
+            <h1>100tifi.co</h1>
+            <div className="work--body-info-button">
+              <a
+                href="https://github.com/ItsDavidHdez/100tifi.co"
+                target="_blank"
+              >
+                SEE THE PROJECT
+              </a>
+            </div>
+          </div>
+          <div className="work--body__img">
+            <img src={cientificoImg} alt="Cientifico" />
           </div>
         </div>
       </div>

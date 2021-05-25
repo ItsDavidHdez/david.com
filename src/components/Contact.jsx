@@ -40,7 +40,8 @@ const Contact = () => {
           <input
             name="email"
             required
-            type="text"
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             className="contact--form__input"
             placeholder="Email"
             onChange={(value) => handleChangeTetx("email", value.target.value)}
