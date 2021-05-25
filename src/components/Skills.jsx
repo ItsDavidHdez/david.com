@@ -30,7 +30,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i className="fab fa-java"></i>
+          <i className="fab fa-css3-alt"></i>
         </div>
         <div className="skills--card-title">
           <p>Tailwind</p>
@@ -94,7 +94,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i className="fab fa-php"></i>
+          <i class="fab fas fa-database"></i>
         </div>
         <div className="skills--card-title">
           <p>MySQL</p>
@@ -102,7 +102,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i className="fab fa-php"></i>
+          <i class="fab fas fa-database"></i>
         </div>
         <div className="skills--card-title">
           <p>MongoDB</p>
@@ -138,6 +138,30 @@ const Skills = () => {
         </div>
         <div className="skills--card-title">
           <p>Python</p>
+        </div>
+      </div>
+      <div className="skills--card">
+        <div className="skills--card-img">
+          <i className="fab fa-aws"></i>
+        </div>
+        <div className="skills--card-title">
+          <p>AWS</p>
+        </div>
+      </div>
+      <div className="skills--card">
+        <div className="skills--card-img">
+          <i class="fab fa-windows"></i>
+        </div>
+        <div className="skills--card-title">
+          <p>Azure</p>
+        </div>
+      </div>
+      <div className="skills--card">
+        <div className="skills--card-img">
+          <i class="fab fa-vuejs"></i>
+        </div>
+        <div className="skills--card-title">
+          <p>Vue.js</p>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   width: 1200px;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   animation: fadeIn 1s;
 }
 

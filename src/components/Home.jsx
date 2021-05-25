@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { davidProfileImg } from "../utils";
+import pdfFile from "../assets/docs/cv.pdf";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -18,8 +19,9 @@ const Home = () => {
             software development with a strong love for frontend architecture
           </p>
           <p className="main--par" id="main--par">
-            Find more about me{" "}
+            Find more about me
             <Link className="main--par__aboutme" to="/aboutme">
+              {" "}
               here
             </Link>
           </p>
@@ -27,9 +29,9 @@ const Home = () => {
             <Link id="contact" className="main--button" to="/contact">
               CONTACT ME
             </Link>
-            <button id="cv" className="main--button">
+            <a href={pdfFile} download id="cv" className="main--button">
               DOWNLOAD CV
-            </button>
+            </a>
           </div>
         </div>
         <div className="main--image">
