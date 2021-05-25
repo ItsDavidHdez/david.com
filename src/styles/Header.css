@@ -199,6 +199,14 @@ ul:hover a span:nth-child(odd) {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    height: 80px;
+  }
+
+  .container-menu {
+    margin-top: 7px;
+  }
+
   .nav--items__span:nth-child(odd) {
     font-size: 16px;
   }
