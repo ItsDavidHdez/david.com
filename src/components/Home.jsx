@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { davidProfileImg } from "../utils";
-import pdfFile from "../assets/docs/cv.pdf";
+import { pdfCv } from "../utils";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
             <Link id="contact" className="main--button" to="/contact">
               CONTACT ME
             </Link>
-            <a href={pdfFile} download id="cv" className="main--button">
+            <a href={pdfCv} download id="cv" className="main--button">
               DOWNLOAD CV
             </a>
           </div>

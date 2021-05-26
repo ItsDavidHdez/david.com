@@ -33,7 +33,7 @@ const AboutMe = () => {
           </div>
           <div className="main--info">
             <p className="aboutme--info">
-              I am a front-end developer in web technologies with basic back-end
+              I am a frontend developer in web technologies with backend
               knowledge. Passionate and dedicated eager to work, learn new
               things, improve my skills and collaborate as a team.
             </p>

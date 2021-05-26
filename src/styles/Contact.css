@@ -1,9 +1,9 @@
 .contact {
-  max-width: 1200px;
   padding: 140px 30px;
   margin: 0px auto;
   animation: fadeIn 1s;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .contact--form {
@@ -56,7 +56,20 @@ form {
   border: 1px solid #d72e75;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+    width: 500px;
+  }
+
+  form {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .contact {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;

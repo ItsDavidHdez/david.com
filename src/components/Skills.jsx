@@ -94,7 +94,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i class="fab fas fa-database"></i>
+          <i className="fab fas fa-database"></i>
         </div>
         <div className="skills--card-title">
           <p>MySQL</p>
@@ -102,7 +102,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i class="fab fas fa-database"></i>
+          <i className="fab fas fa-database"></i>
         </div>
         <div className="skills--card-title">
           <p>MongoDB</p>
@@ -150,7 +150,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i class="fab fa-windows"></i>
+          <i className="fab fa-windows"></i>
         </div>
         <div className="skills--card-title">
           <p>Azure</p>
@@ -158,7 +158,7 @@ const Skills = () => {
       </div>
       <div className="skills--card">
         <div className="skills--card-img">
-          <i class="fab fa-vuejs"></i>
+          <i className="fab fa-vuejs"></i>
         </div>
         <div className="skills--card-title">
           <p>Vue.js</p>

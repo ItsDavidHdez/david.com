@@ -1,11 +1,10 @@
 .aboutme {
-  max-width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
   display: flex;
+  justify-content: center;
   color: var(--main-color);
   animation: fadeIn 1s;
-  position: relative;
 }
 
 .aboutme-container {
@@ -69,6 +68,98 @@
   display: none;
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1439px) {
+  .aboutme {
+    width: 720px;
+  }
+
+  #title {
+    padding: 0;
+    text-align: center;
+  }
+
+  #subtitle {
+    padding-left: 50px;
+  }
+
+  .aboutme--title {
+    font-size: 35px;
+  }
+
+  .aboutme--subtitle {
+    font-size: 32px;
+  }
+
+  .aboutme-head--info {
+    margin-right: 20px;
+  }
+
+  .aboutme--info {
+    font-size: 24px;
+  }
+
+  .aboutme--img {
+    width: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .aboutme {
+    position: initial;
+  }
+
+  #subtitle {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 36px;
+  }
+
+  #profile-image {
+    display: block;
+    width: 170px;
+    animation: fadeIn 1s;
+  }
+
+  .aboutme-head--info {
+    display: block;
+    height: 140px;
+    margin-left: 22px;
+  }
+
+  #title {
+    padding: 0;
+    border-right: none;
+    border-bottom: 3px solid var(--font-color);
+    height: 50%;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .aboutme-container {
+    background-color: transparent;
+    width: 100%;
+    padding: 0px 95px;
+  }
+
+  .aboutme-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+  }
+
+  .aboutme--info {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .aboutme--img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .aboutme {
     position: initial;
@@ -98,6 +189,7 @@
     border-right: none;
     border-bottom: 3px solid var(--font-color);
     height: 50%;
+    text-align: center;
   }
 
   .aboutme-container {
@@ -114,6 +206,7 @@
 
   .aboutme--info {
     color: #fff;
+    font-size: 18px;
   }
 
   .aboutme-container-body {

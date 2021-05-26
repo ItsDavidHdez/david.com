@@ -7,6 +7,7 @@ import {
   cientificoImg,
   profesionalBlogImg,
 } from "./helpers/images";
+import { pdfCv } from "./helpers/docs";
 
 // Email
 export { toEmail, handleSubmitEmail };
@@ -20,3 +21,6 @@ export {
   cientificoImg,
   profesionalBlogImg,
 };
+
+// Docs
+export { pdfCv };
