@@ -119,4 +119,10 @@ form {
     border: 1px solid #90a9b4;
     font-size: 12px;
   }
+
+  #sendMessage {
+    height: 45px;
+    width: 112px;
+    font-size: 11px;
+  }
 }
