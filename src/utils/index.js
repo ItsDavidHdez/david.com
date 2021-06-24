@@ -6,6 +6,8 @@ import {
   tpMexicanaImg,
   cientificoImg,
   profesionalBlogImg,
+  tenteImg,
+  blogImg,
 } from "./helpers/images";
 import { pdfCv } from "./helpers/docs";
 
@@ -20,6 +22,8 @@ export {
   tpMexicanaImg,
   cientificoImg,
   profesionalBlogImg,
+  tenteImg,
+  blogImg,
 };
 
 // Docs

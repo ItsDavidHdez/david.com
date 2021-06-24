@@ -5,12 +5,40 @@ import {
   tpMexicanaImg,
   cientificoImg,
   profesionalBlogImg,
+  tenteImg,
+  blogImg,
 } from "../utils";
 import "../styles/Work.css";
 
 const Work = () => {
   return (
     <section className="work">
+      <div className="work-container" id="work-container">
+        <div className="work--body__img">
+          <img src={blogImg} alt="Merch" />
+        </div>
+        <div className="work--body__info">
+          <h1>David's Blog</h1>
+          <div className="work--body-info-button">
+            <a href="https://github.com/ItsDavidHdez" target="_blank">
+              SEE THE PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="work-container">
+        <div className="work--body__info">
+          <h1>Tenté</h1>
+          <div className="work--body-info-button">
+            <a href="https://nervous-shaw-228ef7.netlify.app/" target="_blank">
+              SEE THE PROJECT
+            </a>
+          </div>
+        </div>
+        <div className="work--body__img">
+          <img src={tenteImg} alt="Tenté" />
+        </div>
+      </div>
       <div className="work-container" id="work-container">
         <div className="work--body__img">
           <img src={merchImg} alt="Merch" />
